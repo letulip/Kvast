@@ -30,9 +30,7 @@
 					<p>Ржаной хлеб, Вода, Солод, Соль</p>
 			        <img src="img/bottle-left.jpg" alt="квас «Вахтёр»" width="319" height="459">
 			        <h3>Вахтёр</h3>
-				          <p>
-				          Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!
-				          </p>
+				          <p>Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!</p>
 			        <a class="btn" href="#">Подробнее</a>
 			        <a class="btn" href="#">Купить</a>
 			        <b>150 р.</b>
@@ -43,9 +41,7 @@
 					<p>Ржаной хлеб, Вода, Солод, Соль</p>
 			        <img src="img/bottle-right.jpg" alt="квас Романтик" width="319" height="459">
 			        <h3>Романтик</h3>
-				          <p>
-				          Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.
-				          </p>
+				          <p>Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
 			        <a class="btn" href="#">Подробнее</a>
 			        <a class="btn" href="#">Купить</a>
 			        <b>90 р.</b>
@@ -142,6 +138,46 @@
 	          <td>90 руб.</td>
 	        </tr>
 	      </table>
+    </div>
+
+    <div class="order">
+      <h2>Заказать</h2>
+      <p class="order-tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+      <form class="order-form" action="/kvast-mail" method="post">
+        <div class="order-form-group">
+          <label for="fullname">Представьтесь:</label>
+          <input type="text" name="fullname" id="fullname">
+        </div>
+        <div class="order-form-group">
+          <label for="phone">Номер телефона:</label>
+          <input type="text" name="phone" id="phone">
+        </div>
+        <div class="order-form-group">
+          <label for="exphone">Доп. номер:</label>
+          <input type="text" name="exphone" id="exphone">
+        </div>
+        <div class="order-form-group">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="order-form-group">
+          <label for="quantity">Объем заказа:</label>
+          <select name="quantity" id="quantity">
+            <option value="1">От 5 до 10 баррелей в неделю</option>
+          </select>
+        </div>
+        <div class="order-form-group">
+          <label for="message">Доп. комментарий:</label>
+          <textarea name="message" id="message" rows="10"></textarea>
+        </div>
+        <div class="checkbox-area">
+          <label>
+            <input type="checkbox" name="subscription">
+            Я согласен получать квасную рассылку
+          </label>
+        </div>
+        <input type="submit" class="btn" value="Отправить заказ">
+      </form>
     </div>
   </body>
 </html>
